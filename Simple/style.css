@@ -1,0 +1,459 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar-content {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-right a {
+    color: rgb(76, 88, 102);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    transition: 0.3s ease-out;
+}
+
+.navbar-right a:hover {
+    color: rgb(120, 117, 254);
+    text-shadow: 0 0 45px rgb(70, 67, 253);
+}
+
+.navbar-right {
+    display: flex;
+    gap: 50px;
+}
+
+@media screen and (max-width: 1252px) {
+    .navbar-content {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1109px) {
+    .header-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-row {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 60px;
+    }
+    .maket {
+        display: flex;
+        flex-direction: column;
+    }
+    .example-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .reklama-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .simple-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: rgb(221, 221, 221);
+}
+
+.header-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-title {
+    color: rgb(76, 88, 102);
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 444px;
+    padding-top: 130px;
+}
+
+.header-text {
+    color: rgb(133, 133, 155);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 445px;
+    padding-top: 30px;
+}
+
+.header-btn {
+    color: rgb(120, 117, 254);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    box-sizing: border-box;
+    border: 1px solid rgb(120, 117, 254);
+    width: 255px;
+    height: 70px;
+    background: none;
+    text-align: center;
+    transition: 0.4s;
+    margin-top: 30px;
+    transition: 0.5s ease-out;
+}
+
+.header-btn:hover {
+    background-color: rgb(120, 117, 254);
+    color: #fff;
+}
+
+.header-right {
+    background-image: url(./img/Layer\ 2\ copy.svg);
+    width: 50%;
+    height: 1336px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    margin-top: 60px;
+    z-index: -1;
+    position: absolute;
+    right: -0;
+}
+
+.header-content {
+    display: flex;
+    margin-bottom: 130px;
+}
+
+.about {
+    background-color: #ebebeb;
+}
+
+.about-content {
+    width: 100%;
+    /* height: 973px; */
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-line {
+    width: 350px;
+    height: 1px;
+    background: rgb(192, 192, 192);
+    margin-top: 90px;
+}
+
+.about-col {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.version {
+    color: rgb(102, 102, 102);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.result {
+    color: rgb(133, 133, 155);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.maket {
+    display: flex;
+    margin-top: 220px;
+    justify-content: space-between;
+}
+
+.maket-title {
+    color: rgb(102, 102, 102);
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 350px;
+}
+
+.maket-text {
+    color: rgb(133, 133, 155);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 20px;
+    width: 350px;
+}
+
+.maket-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.example-row {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.example-title {
+    color: rgb(102, 102, 102);
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.example-number {
+    color: rgb(181, 181, 189);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 8px;
+}
+
+.example-text {
+    color: rgb(133, 133, 155);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 0%;
+    width: 295px;
+    text-align: start;
+    padding-bottom: 20px;
+    padding-top: 8px;
+}
+
+.example-btn a {
+    color: rgb(120, 117, 254);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.example-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 90px;
+}
+
+.example-text2 {
+    color: rgb(133, 133, 155);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 285px;
+    padding-bottom: 20px;
+    padding-top: 8px;
+}
+
+.example-text3 {
+    color: rgb(133, 133, 155);
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 255px;
+    padding-bottom: 20px;
+    padding-top: 8px;
+}
+
+.example-text4 {
+    color: rgb(133, 133, 155);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 255px;
+    padding-bottom: 20px;
+    padding-top: 8px;
+}
+
+.reklama {
+    background-color: #ebebeb;
+    width: 100%;
+    height: 315px;
+    display: flex;
+    align-items: center;
+}
+
+.reklama-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reklama-col {
+    width: 255px;
+    height: 135px;
+    border: 1px solid rgb(196, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-out;
+}
+
+.reklama-col:hover {
+    scale: 1.1;
+    box-shadow: 0 0 15px rgb(162, 162, 162);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.simple-title {
+    color: rgb(102, 102, 102);
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.simple-text {
+    color: rgb(133, 133, 155);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 0%;
+    width: 350px;
+    text-align: left;
+    padding-bottom: 30px;
+    padding-top: 8px;
+}
+
+.simple-btn {
+    color: rgb(120, 117, 254);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(120, 117, 254);
+    width: 255px;
+    height: 70px;
+    background: none;
+    transition: 0.4s ease-out;
+}
+
+.simple-btn:hover {
+    background-color: rgb(120, 117, 254);
+    color: #fff;
+}
+
+.simple-content {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simple-right {
+    background-image: url(./img/book.svg);
+    width: 730px;
+    height: 410px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    width: 100%;
+    background: rgb(76, 88, 102);
+}
+
+.footer-content {
+    height: 80px;
+    width: 100%;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-right img {
+    cursor: pointer;
+}
